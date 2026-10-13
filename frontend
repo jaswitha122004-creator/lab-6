@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration & Checkout</title>
+</head>
+<body>
+    <h2>Customer Registration</h2>
+    <form>
+        Name: <input type="text" required><br><br>
+        Email: <input type="email" required><br><br>
+        Password: <input type="password" minlength="6" required><br><br>
+        DOB: <input type="date"><br><br>
+        Phone: <input type="tel" pattern="[0-9]{10}" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Checkout Form</h2>
+    <form>
+        Address: <textarea required></textarea><br><br>
+        Pincode: <input type="text" pattern="[0-9]{6}" required><br><br>
+        Payment:
+        <select required>
+            <option value="">Select</option>
+            <option>Cash on Delivery</option>
+            <option>Card</option>
+            <option>UPI</option>
+        </select><br><br>
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
